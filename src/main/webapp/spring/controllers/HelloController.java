@@ -11,7 +11,7 @@ public class HelloController {
 
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
-    String home() {
+    private String home() {
         return "This is hidden hello page";
     }
 }
