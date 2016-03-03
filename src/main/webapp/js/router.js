@@ -1,4 +1,4 @@
-var myApp = angular.module('MyApp', ['ngRoute']);
+var myApp = angular.module('MyApp');
 
 myApp.config(function($routeProvider){
     $routeProvider.when('/darkSide',
@@ -14,10 +14,5 @@ myApp.config(function($routeProvider){
     $routeProvider.otherwise( {redirectTo: '/'});
 });
 
-myApp.controller('lightSideCtrl', function($scope) {
-    $scope.side = 'light';
-});
 
-myApp.controller('darkSideCtrl', function($scope) {
-    $scope.side = 'dark';
-});
+
